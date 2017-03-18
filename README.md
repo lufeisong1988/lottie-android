@@ -26,7 +26,7 @@ Lottie 是一个用于 Android 和 iOS 的代码库，可以解析用 [Adobe Aft
 ![Example4](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Example4.gif)
 
 
-所有这些动画都是在 After Effects 里创作的, 然后用 Bodymovin 脚本导出, 在设备本地直接渲染的，没做任何附加的修改。
+所有这些动画都是在 After Effects 里创作的, 然后用 Bodymovin 插件导出, 在设备本地直接渲染的，没做任何附加的修改。
 
 [Bodymovin](https://github.com/bodymovin/bodymovin) 是一款由 Hernan·Torrisi 编写的 After Effects 插件，用于将 After effects 动画导出为 JSON 数据，它包含一个JavaScript写的可用于web的播放器（译者注：这个播放器直接读取JSON数据来播放动画，可以直接用来做网页，这个是bodymovin自带的功能）。我们在他的大作的基础上把插件的功能应用于Android、iOS和React Native。
 
