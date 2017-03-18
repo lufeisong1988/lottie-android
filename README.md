@@ -1,10 +1,11 @@
-这是Lottie项目说明的中文翻译, 原文地址：https://github.com/airbnb/lottie-android/   
-Lottie-iOS版的翻译[点这里](https://github.com/CRAnimation/lottie-ios)，由[CRAnimation团队](https://github.com/CRAnimation)提供。
-文中After Effects术语参考自官方中文版AE。  
-
+# Lottie 安卓版, [iOS版](https://github.com/airbnb/lottie-ios), and [React Native版](https://github.com/airbnb/lottie-react-native)  
 <br>
-# Lottie 安卓版, [iOS版](https://github.com/airbnb/lottie-ios), and [React Native版](https://github.com/airbnb/lottie-react-native)
 <a href='https://play.google.com/store/apps/details?id=com.airbnb.lottie'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="80px"/></a> 
+
+ ***这是Lottie项目说明的中文版，由[BigXiXi](https://github.com/bigxixi)翻译, 原文地址：https://github.com/airbnb/lottie-android/   
+Lottie-iOS版的翻译[点这里](https://github.com/CRAnimation/lottie-ios)，由[CRAnimation团队](https://github.com/CRAnimation)提供。
+文中After Effects术语参考自官方中文版AE。***   
+
 
 Lottie 是一个用于 Android 和 iOS 的代码库，可以将 [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) 制作的动画用 [Bodymovin 插件](https://github.com/bodymovin/bodymovin) 导出后的JSON数据文件在移动端原生执行!
 
