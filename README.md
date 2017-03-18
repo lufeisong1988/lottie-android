@@ -26,7 +26,7 @@ Lottie 是一个用于 Android 和 iOS 的代码库，可以解析用 [Adobe Aft
 ![Example4](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Example4.gif)
 
 
-所有这些动画都是在 After Effects 里创作的, 然后用 Bodymovin 插件导出, 在设备本地直接渲染的，没做任何附加的修改。
+所有这些动画都是在 After Effects 里创作的, 然后用 Bodymovin 插件导出在设备本地直接渲染的，没做任何附加的修改。
 
 [Bodymovin](https://github.com/bodymovin/bodymovin) 是一款由 Hernan·Torrisi 编写的 After Effects 插件，用于将 After effects 动画导出为 JSON 数据，它包含一个JavaScript写的可用于web的播放器（译者注：这个播放器直接读取JSON数据来播放动画，可以直接用来做网页，这个是bodymovin自带的功能）。我们在他的大作的基础上把插件的功能应用于Android、iOS和React Native。
 
@@ -142,8 +142,9 @@ animationView.setImageAssetDelegate(new ImageAssetDelegate() {
         });
 ```
 
-## 支持的 After Effects 动画类型
-
+## 支持的 After Effects 动画类型  
+译者注：Lottie目前**不支持**的AE动效类型很多，例如常用的3D图层变换、几乎所有效果器[effects]、图层样式[layer styles]、叠加模式[blending mode]、渐变[gradient ramp/gradient fill...]（好像正在加入支持，期待更新）、任意表达式[expressions]、径向擦除[radius wipe]等。。。<br>
+在用AE制作动画的时候一定要看清楚能否拆解为以下支持的类型。  
 ### 预合成[Pre-composition]
 
 ---
@@ -273,8 +274,8 @@ animationView.setImageAssetDelegate(new ImageAssetDelegate() {
 ## 其他方案
 1. 手工编写动画代码。 同时为Android和iOS平台编写动画代码将会耗费巨大的难以预估的设计和开发时间。甚至在花费了如此多时间后仍无法保证可以完美还原动画。
 2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes). Keyframes是Facebook出品的一个优秀的动画代码库。然而, Keyframes 支持的AE动画特性较少，例如Lottie所支持的遮罩、蒙版、路径修建、虚线等等它都没有提供支持。 
-2. Gifs动画。 Gifs占用了数倍于bodymovin导出的JSON文件的大小，而且只能在一个固定的尺寸渲染无法放大适配高分辨率屏幕。
-3. Png图像序列。 Png图像序列的效果甚至比gif还要糟糕，因为它的体积可能达到json的几十倍而且同样无法放大。
+2. Gifs动画。 Gifs占用了数倍于bodymovin导出的JSON文件的大小，而且只能在一个固定的尺寸渲染无法放大适配高分辨率屏幕。（译者注：gif的问题还有颜色数最高只有256色导致的画质不高，画面中的渐变容易出现断层，如果是带透明通道的gif几乎都会产出毛边。）
+3. Png图像序列。Png图像序列的效果甚至比gif还要糟糕，因为它的体积可能达到json的几十倍而且同样无法放大。
 
 ## 为什么叫做Lottie?
 Lottie是以德国剪影动画先驱Lotte Reiniger（洛特·雷妮格）的名字命名的。 她最出名的作品是《阿基米德王子历险记》 (1926) – 世界上第一部长篇动画电影。 比华尔特·迪士尼的长篇动画电影——《白雪公主与七个小矮人》 (1937) 还要早了10年。  
