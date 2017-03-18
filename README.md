@@ -7,7 +7,7 @@ Lottie-iOS版的翻译[点这里](https://github.com/CRAnimation/lottie-ios)，�
 文中After Effects术语参考自官方中文版AE。***   
 
 
-Lottie 是一个用于 Android 和 iOS 的代码库，可以将 [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) 制作的动画用 [Bodymovin 插件](https://github.com/bodymovin/bodymovin) 导出后的JSON数据文件在移动端原生执行!
+Lottie 是一个用于 Android 和 iOS 的代码库，可以解析用 [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) 制作动画后通过 [Bodymovin 插件](https://github.com/bodymovin/bodymovin) 导出的JSON数据文件并在移动端原生渲染!
 
 现在,设计师们终于可以创造 **并传递** 优美的动画给工程师们，再也不用让工程师痛苦地手工还原动画。 都说一图胜千言，现在我们有千言万语:
 
