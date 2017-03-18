@@ -1,68 +1,63 @@
-# Lottie for Android, [iOS](https://github.com/airbnb/lottie-ios), and [React Native](https://github.com/airbnb/lottie-react-native)
+这是Lottie项目说明的中文翻译, 原文地址：https://github.com/CRAnimation/lottie-ios  
+Lottie-iOS版的翻译[点这里](https://github.com/CRAnimation/lottie-ios)，由[CRAnimation团队](https://github.com/CRAnimation)提供。    文中After Effects术语参考自官方中文版AE。
+<br>
+# Lottie 安卓版, [iOS版](https://github.com/airbnb/lottie-ios), and [React Native版](https://github.com/airbnb/lottie-react-native)
 <a href='https://play.google.com/store/apps/details?id=com.airbnb.lottie'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="80px"/></a> 
 
-Lottie is a mobile library for Android and iOS that parses [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) animations exported as json with [Bodymovin](https://github.com/bodymovin/bodymovin) and renders them natively on mobile!
+Lottie 是一个用于 Android 和 iOS 的代码库，可以将 [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) 制作的动画用 [Bodymovin 插件](https://github.com/bodymovin/bodymovin) 导出后的JSON数据文件在移动端原生执行!
 
-For the first time, designers can create **and ship** beautiful animations without an engineer painstakingly recreating it by hand. They say a picture is worth 1,000 words so here are 13,000:
+现在,设计师们终于可以创造 **并传递** 优美的动画给工程师们，再也不用让工程师痛苦地手工还原动画。 都说一图胜千言，现在我们有千言万语:
 
-![Example1](gifs/Example1.gif)
-
-
-![Example2](gifs/Example2.gif)
+![Example1](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Example1.gif)
 
 
-![Example3](gifs/Example3.gif)
+![Example2](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Example2.gif)
 
 
-![Community](gifs/Community%202_3.gif)
+![Example3](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Example3.gif)
 
 
-![Example4](gifs/Example4.gif)
+![Community](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Community%202_3.gif)
 
 
-All of these animations were created in After Effects, exported with Bodymovin, and rendered natively with no additional engineering effort.
+![Example4](https://raw.githubusercontent.com/airbnb/lottie-android/master/gifs/Example4.gif)
 
-[Bodymovin](https://github.com/bodymovin/bodymovin) is an After Effects plugin created by Hernan Torrisi that exports After effects files as json and includes a javascript web player. We've built on top of his great work to extend its usage to Android, iOS, and React Native.
 
-Read more about it on our [blog post](http://airbnb.design/introducing-lottie/)
-Or get in touch on Twitter ([gpeal8](https://twitter.com/gpeal8)) or via lottie@airbnb.com
+所有这些动画都是在 After Effects 里创作的, 然后用 Bodymovin 脚本导出, 在设备本地直接渲染的，没做任何附加的修改。
 
-## Other Platforms
+[Bodymovin](https://github.com/bodymovin/bodymovin) 是一款由 Hernan·Torrisi 编写的 After Effects 插件，用于将 After effects 动画导出为 JSON 数据，它包含一个JavaScript写的可用于web的播放器（译者注：这个播放器直接读取JSON数据来播放动画，可以直接用来做网页，这个是bodymovin自带的功能）。我们在他的大作的基础上把插件的功能应用于Android、iOS和React Native。
+
+更多细节可以参阅我们的[博文](http://airbnb.design/introducing-lottie/)。
+也可以在推特上和我们互动@ ([gpeal8](https://twitter.com/gpeal8)) 或者给我们写邮件，地址是 lottie@airbnb.com。
+
+## 其他平台
  * [Web](https://github.com/bodymovin/bodymovin)
  * [Xamarin](https://github.com/martijn00/LottieXamarin)
  * [NativeScript](https://github.com/bradmartin/nativescript-lottie)
  * [Appcelerator Titanium](https://github.com/m1ga/ti.animation)
 
-## Sample App
+## 演示APP
 
-You can build the sample app yourself or download it from the [Play Store](https://play.google.com/store/apps/details?id=com.airbnb.lottie). The sample app includes some built in animations but also allows you to load an animation from internal storage or from a url.
+你可以自己编译演示APP或者在 Google Play 下载[Play Store地址](https://play.google.com/store/apps/details?id=com.airbnb.lottie)。这款演示APP包含了一些自带的动画例子，当然你也可以从手机本地存储或者网络（通过网盘或URL）上加载自己的动画。
 
 
-## Download
+## 下载
 
-Gradle is the only supported build configuration, so just add the dependency to your project `build.gradle` file:
+Lottie 仅支持用 Gradle 构建配置, 请将依赖项添加到项目 `build.gradle` 文件中：
 
-### Release
 ```groovy
 dependencies {  
   compile 'com.airbnb.android:lottie:1.5.3'
 }
 ```
 
-### Beta
-```groovy
-dependencies {  
-  compile 'com.airbnb.android:lottie:2.0.0-beta1'
-}
-```
+## 你的项目中使用了Lottie吗?
 
-## Shipping something with Lottie?
+如果你在项目里使用了Lottie，可以通过邮件告诉我们（lottie@airbnb.com），我们将很快建立一个页面呈现来自全球的真实用户案例。  
 
-Email us at lottie@airbnb.com and soon we will create a testimonals and use cases page with real world usages of Lottie from around the world.
-
-## Using Lottie
-Lottie supports ICS (API 14) and above.
-The simplest way to use it is with LottieAnimationView:
+## 如何使用Lottie
+Lottie 支持ICS (API 14) 及以上版本。
+最简单的用法是使用 LottieAnimationView:
 
 ```xml
 <com.airbnb.lottie.LottieAnimationView
@@ -74,16 +69,16 @@ The simplest way to use it is with LottieAnimationView:
         app:lottie_autoPlay="true" />
 ```
 
-Or you can load it programmatically in multiple ways.
-From a json asset in app/src/main/assets:
+或者你也可以通过其他程序化的手段来加载。  
+比如读取在 app/src/main/assets 中的JSON文件:  
 ```java
 LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.animation_view);
 animationView.setAnimation("hello-world.json");
 animationView.loop(true);
 ```
-This method will load the file and parse the animation in the background and asynchronously start rendering once completed.
+这个方法可以在后台异步加载动画文件，并在加载完成后开始渲染动画。 
 
-If you want to reuse an animation such as in each item of a list or load it from a network request JSONObject:
+如果你想重用一个动画，例如用在一个列表中的每个条目中或者加载自网络请求的JSONObject：   
 ```java
  LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.animation_view);
  ...
@@ -92,24 +87,24 @@ If you want to reuse an animation such as in each item of a list or load it from
      animationView.playAnimation();
  });
 
- // Cancel to stop asynchronous loading of composition
+ // 可以用cancel()方法来停止composition的异步加载
  // compositionCancellable.cancel();
 ```
 
-You can then control the animation or add listeners:
+然后你可以控制这个动画或者给他加个监听：  
 ```java
 animationView.addAnimatorUpdateListener((animation) -> {
-    // Do something.
+    //这里可添加自定义功能
 });
 animationView.playAnimation();
 ...
 if (animationView.isAnimating()) {
-    // Do something.
+    //这里可添加自定义功能
 }
 ...
 animationView.setProgress(0.5f);
 ...
-// Custom animation speed or duration.
+// 自定义动画速度或时长
 ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f)
     .setDuration(500);
 animator.addUpdateListener(animation -> {
@@ -120,27 +115,22 @@ animator.start();
 animationView.cancelAnimation();
 ```
 
+本质上说， `LottieAnimationView` 使用 `LottieDrawable` 来渲染动画。如有需要，你也可以直接使用 drawable：  
 
-Under the hood, `LottieAnimationView` uses `LottieDrawable` to render its animations. If you need to, you can use the drawable form directly:
 ```java
 LottieDrawable drawable = new LottieDrawable();
 LottieComposition.Factory.fromAssetFileName(getContext(), "hello-world.json", (composition) -> {
     drawable.setComposition(composition);
 });
 ```
-
-If your animation will be frequently reused, `LottieAnimationView` has an optional caching strategy built in. Use `LottieAnimationView#setAnimation(String, CacheStrategy)`. `CacheStrategy` can be `Strong`, `Weak`, or `None` to have `LottieAnimationView` hold a strong or weak reference to the loaded and parsed animation.
+如果你的动画需要频繁重用， `LottieAnimationView` 自带一个可选的缓存机制 —— `LottieAnimationView#setAnimation(String, CacheStrategy)`。 `CacheStrategy` 参数的可选项是 `Strong`（强）, `Weak`（弱）, or `None`（无）， 用以设定 `LottieAnimationView` 对已加载和解析的动画的引用强弱程度。  
  
  
-### Image Support
-You can animate images if your animation is loaded from assets and your image file is in a 
-subdirectory of assets. Just call `setImageAssetsFolder` on `LottieAnimationView` or 
-`LottieDrawable` with the relative folder inside of assets and make sure that the images that 
-bodymovin export are in that folder with their names unchanged (should be img_#).
-If you use `LottieDrawable` directly, you must call `recycleBitmaps` when you are done with it.
+### 图像资源支持  
+你也可以对图片资源做动画，此时用到的图片需存放在asset目录下的一个子目录中。只需调用`LottieAnimationView` 或 `LottieDrawable` 中的 `setImageAssetsFolder` 加载asset目录下的相对目录，并保持图片资源的文件名和从bodymovin中导出时一致（格式为 img_#.png/jpg ...）。
+如果你是直接使用 `LottieDrawable` ，完成后需用 `recycleBitmaps` 方法来释放。
 
-If you need to provide your own bitmaps if you downloaded them from the network or something, you
- can provide a delegate to do that:
+如果你需要以网络下载或者其他方式提供图片资源，可以用一个delegate来实现： 
  ```java
 animationView.setImageAssetDelegate(new ImageAssetDelegate() {
           @Override public Bitmap fetchBitmap(LottieImageAsset asset) {
@@ -149,154 +139,149 @@ animationView.setImageAssetDelegate(new ImageAssetDelegate() {
         });
 ```
 
-## Supported After Effects Features
+## 支持的 After Effects 动画类型
 
-### Pre-composition
-
----
-
-### Keyframe Interpolation
+### 预合成[Pre-composition]
 
 ---
 
-* Linear Interpolation
-
-* Bezier Interpolation
-
-* Hold Interpolation
-
-* Rove Across Time
-
-* Spatial Bezier
-
-### Solids
+### 关键帧插值[Keyframe Interpolation]
 
 ---
 
-* Transform Anchor Point
+* 线性插值[Linear Interpolation]
 
-* Transform Position
+* 贝塞尔曲线插值[Bezier Interpolation]
 
-* Transform Scale
+* 定格插值[Hold Interpolation]
 
-* Transform Rotation
+* 漂浮穿梭时间[Rove Across Time]
 
-* Transform Opacity
+* 空间贝塞尔曲线[Spatial Bezier]
 
-### Masks
-
----
-
-* Path
-
-* Opacity
-
-* Multiple Masks (additive, subtractive, inverted)
-
-### Track Mattes
+### 固态层[Solids]
 
 ---
 
-* Alpha Matte
+* 锚点变换[Transform Anchor Point]
 
-### Parenting
+* 位置变换[Transform Position]
 
----
+* 缩放变换[Transform Scale]
 
-* Multiple Parenting
+* 旋转变换[Transform Rotation]
 
-* Nulls
+* 不透明度变换[Transform Opacity]
 
-### Shape Layers
-
----
-
-* Rectangle (All properties)
-
-* Ellipse (All properties)
-
-* Polystar (All properties)
-
-* Polygon (All properties. Integer point values only.)
-
-* Path (All properties)
-
-* Anchor Point
-
-* Position
-
-* Scale
-
-* Rotation
-
-* Opacity
-
-* Group Transforms (Anchor point, position, scale etc)
-
-* Multiple paths in one group
-
-* Merge paths (off by default and must be explicitly enabled with
-`enableMergePathsForKitKatAndAbove`)
-
-#### Stroke (shape layer)
+### 蒙版[Masks]
 
 ---
 
-* Stroke Color
+* 蒙版路径[Path]
 
-* Stroke Opacity
+* 蒙版不透明度[Opacity]
 
-* Stroke Width
+* 多蒙版混合模式（相加、相减、反转）[Multiple Masks (additive, subtractive, inverted)]
 
-* Line Cap
-
-* Dashes
-
-#### Fill (shape layer)
+### 轨道遮罩[Track Mattes]
 
 ---
 
-* Fill Color
+* Alpha 遮罩[Alpha Matte]
 
-* Fill Opacity
-
-#### Trim Paths (shape layer)
+### 父级[Parenting]
 
 ---
 
-* Trim Paths Start
+* 多个父级[Multiple Parenting]
 
-* Trim Paths End
+* 空对象[Nulls]
 
-* Trim Paths Offset
+### 形状图层[Shape Layers]
 
-## Performance and Memory
-1. If the composition has no masks or mattes then the performance and memory overhead should be quite good. No bitmaps are created and most operations are simple canvas draw operations.
-2. If the composition has masks or mattes, offscreen buffers will be used and there will 
-be a performance hit has it gets drawn.  
-3. If you are using your animation in a list, it is recommended to use a CacheStrategy in 
-LottieAnimationView.setAnimation(String, CacheStrategy) so the animations do not have to be deserialized every time.
+---
 
-## Try it out
-Clone this repository and run the LottieSample module to see a bunch of sample animations. The JSON files for them are located in [LottieSample/src/main/assets](https://github.com/airbnb/lottie-android/tree/master/LottieSample/src/main/assets) and the original After Effects files are located in [/After Effects Samples](https://github.com/airbnb/lottie-android/tree/master/After%20Effects%20Samples)
+* 矩形（所有属性）[Rectangle (All properties)]
 
-The sample app can also load json files at a given url or locally on your device (like Downloads or on your sdcard).
+* 椭圆（所有属性）[Ellipse (All properties)]
+
+* 多边星形（所有属性）[Polystar (All properties)]
+
+* 多边形（所有属性。点个数必须为整数。）[Polygon (All properties. Integer point values only.)]
+
+* 路径变换（所有属性）[Path (All properties)]
+
+* 锚点变换[Anchor Point]
+
+* 位置变换[Position]
+
+* 缩放变换[Scale]
+
+* 旋转变换[Rotation]
+
+* 不透明度[Opacity]
+
+* 形状组变换（锚点、位置、缩放……）[Group Transforms (Anchor point, position, scale etc)]
+
+* 一个形状组可包含多个形状 [Multiple paths in one group]
+
+#### 形状图层描边 [Stroke (shape layer)]
+
+---
+
+* 描边颜色[Stroke Color]
+
+* 描边不透明度[Stroke Opacity]
+
+* 描边宽度[Stroke Width]
+
+* 描边端点[Line Cap]
+
+* 虚线[Dashes]
+
+#### 形状图层填充[Fill (shape layer)]
+
+---
+
+* 填充颜色[Fill Color]
+
+* 填充不透明度[Fill Opacity]
+
+#### 修剪路径[Trim Paths (shape layer)]
+
+---
+
+* 修剪路径开始[Trim Paths Start]
+
+* 修剪路径结束[Trim Paths End]
+
+* 修剪路径偏移[Trim Paths Offset]
+
+## 性能和内存占用
+1. 如果动画合成中没有遮罩或者蒙版，性能和内存开销会非常棒。此时没有位图生成，大部分操作都是简单的canvas画布操作。  
+2. 如果合成中存在遮罩或者蒙版, 动画将会使用脱屏缓冲区（offscreen buffer），性能将会受到影响。
+3. 如果你在一个列表中使用动画, 我们建议你配置 LottieAnimationView.setAnimation(String, CacheStrategy) 的第二个参数——缓存策略，这样动画就不必每次都反序列化。 
+
+## 来试试吧
+克隆这个库并运行LottieSample模块，你将能看到很多示例动画。 动画的JSON数据文件存放在 [LottieSample/src/main/assets](https://github.com/airbnb/lottie-android/tree/master/LottieSample/src/main/assets) ，原始的AE工程文件存放在 [/After Effects Samples](https://github.com/airbnb/lottie-android/tree/master/After%20Effects%20Samples)
+
+示例APP同样可以从url或本地设备加载并渲染JSON文件（比如downloads文件夹或者sdcard）。
  
-## Alternatives
-1. Build animations by hand. Building animations by hand is a huge time commitment for design and engineering across Android and iOS. It's often hard or even impossible to justify spending so much time to get an animation right.
-2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes). Keyframes is a wonderful new library from Facebook that they built for reactions. However, Keyframes doesn't support some of Lottie's features such as masks, mattes, trim paths, dash patterns, and more.
-2. Gifs. Gifs are more than double the size of a bodymovin JSON and are rendered at a fixed size that can't be scaled up to match large and high density screens.
-3. Png sequences. Png sequences are even worse than gifs in that their file sizes are often 30-50x the size of the bodymovin json and also can't be scaled up.
+## 其他方案
+1. 手工编写动画代码。 同时为Android和iOS平台编写动画代码将会耗费巨大的难以预估的设计和开发时间。甚至在花费了如此多时间后仍无法保证可以完美还原动画。
+2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes). Keyframes是Facebook出品的一个优秀的动画代码库。然而, Keyframes 支持的AE动画特性较少，例如Lottie所支持的遮罩、蒙版、路径修建、虚线等等它都没有提供支持。 
+2. Gifs动画。 Gifs占用了数倍于bodymovin导出的JSON文件的大小，而且只能在一个固定的尺寸渲染无法放大适配高分辨率屏幕。
+3. Png图像序列。 Png图像序列的效果甚至比gif还要糟糕，因为它的体积可能达到json的几十倍而且同样无法放大。
 
-## Why is it called Lottie?
-Lottie is named after a German film director and the foremost pioneer of silhouette animation. Her best known films are The Adventures of Prince Achmed (1926) – the oldest surviving feature-length animated film, preceding Walt Disney's feature-length Snow White and the Seven Dwarfs (1937) by over ten years
-[The art of Lotte Reineger](https://www.youtube.com/watch?v=LvU55CUw5Ck&feature=youtu.be)
+## 为什么叫做Lottie?
+Lottie是以德国剪影动画先驱Lotte Reiniger（洛特·雷妮格）的名字命名的。 她最出名的作品是《阿基米德王子历险记》 (1926) – 世界上第一部长篇动画电影。 比华尔特·迪士尼的长篇动画电影——《白雪公主与七个小矮人》 (1937) 还要早了10年。  
+[洛特·雷妮格的艺术](https://www.youtube.com/watch?v=LvU55CUw5Ck&feature=youtu.be)
 
-## Contributing
-Contributors are more than welcome. Just upload a PR with a description of your changes.
-Lottie uses [Facebook screenshot tests for Android](https://github.com/facebook/screenshot-tests-for-android) to identify pixel level changes/breakages. Please run `./gradlew --daemon recordMode screenshotTests` before uploading a PR to ensure that nothing has broken. Use a Nexus 5 emulator running Lollipop for this. Changed screenshots will show up in your git diff if you have.
+## 为Lottie做贡献
+我们非常欢迎您为Lottie贡献力量， 只需提交一个Pull Request并附上对你所做改进的描述。  
+Lottie 使用 [Facebook screenshot tests for Android](https://github.com/facebook/screenshot-tests-for-android)（Facebook出品的安卓快照测试工具） 来检测像素级的变动。 请在发起PR前运行 `./gradlew --daemon recordMode screenshotTests` 来确保没有产生破坏性的改动。请使用模拟器运行搭载Lollipop系统的Nexus 5来做这个测试。如果快照有变动将会出现在你的git diff结果中。
 
-If you would like to add more JSON files and screenshot tests, feel free to do so and add the test to `LottieTest`.
+如果你想加入更多的JSON文件和快照测试, 可以把测试加入到 `LottieTest`。 
 
-## Issues or feature requests?
-File github issues for anything that is unexpectedly broken. If an After Effects file is not working, please attach it to your issue. Debugging without the original file is much more difficult.
+## 有问题或者功能需求？
+任何问题欢迎到github的issues页面提出。 如果你的After Effect文件导出的动画无效, 也请将AE工程文件作为附件粘贴到你的issue里。没有原始文件的情况下我们也很难诊断问题。
