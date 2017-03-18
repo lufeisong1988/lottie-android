@@ -1,4 +1,4 @@
-这是Lottie项目说明的中文翻译, 原文地址：https://github.com/airbnb/lottie-android/ 
+这是Lottie项目说明的中文翻译, 原文地址：https://github.com/airbnb/lottie-android/   
 Lottie-iOS版的翻译[点这里](https://github.com/CRAnimation/lottie-ios)，由[CRAnimation团队](https://github.com/CRAnimation)提供。    文中After Effects术语参考自官方中文版AE。
 <br>
 # Lottie 安卓版, [iOS版](https://github.com/airbnb/lottie-ios), and [React Native版](https://github.com/airbnb/lottie-react-native)
