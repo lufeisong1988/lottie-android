@@ -5,7 +5,7 @@
 * 本文由[BigXiXi](https://github.com/bigxixi)翻译
 * 本项目原地址：[airbnb/lottie-android](https://github.com/airbnb/lottie-android)
 * Lottie-iOS译文地址：[CRAnimation/lottie-iOS](https://github.com/CRAnimation/lottie-ios)
-* Lottie-Android译文地址：[CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android)
+* Lottie-Android译文原地址：[lottie-android]((https://github.com/bigxixi/lottie-android)
 * Lottie-React-Native译文地址：[CRAnimation/lottie-react-native](https://github.com/CRAnimation/lottie-react-native)
 * 文中After Effects术语参考自官方中文版AE。
 * QQ群：547897182（iOS动效特工队，入群请提供个人主页货github账号）
