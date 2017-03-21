@@ -1,10 +1,14 @@
-# Lottie 安卓版, [iOS版](https://github.com/airbnb/lottie-ios), and [React Native版](https://github.com/airbnb/lottie-react-native)  
+# Lottie 安卓版, [iOS版](https://github.com/CRAnimation/lottie-ios), and [React Native版]https://github.com/CRAnimation/lottie-react-native)  
 <br>
 <a href='https://play.google.com/store/apps/details?id=com.airbnb.lottie'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="80px"/></a> 
 
- ***这是Lottie项目说明的中文版，由[BigXiXi](https://github.com/bigxixi)翻译, 原文地址：https://github.com/airbnb/lottie-android/<br>
-Lottie-iOS版的翻译[点这里](https://github.com/CRAnimation/lottie-ios)，由[CRAnimation团队](https://github.com/CRAnimation)提供。<br>
-文中After Effects术语参考自官方中文版AE。***   
+* 本文由[BigXiXi](https://github.com/bigxixi)翻译
+* 本项目原地址：[airbnb/lottie-android](https://github.com/airbnb/lottie-android)
+* Lottie-iOS译文地址：[CRAnimation/lottie-iOS](https://github.com/CRAnimation/lottie-ios)
+* Lottie-Android译文地址：[CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android)
+* Lottie-React-Native译文地址：[CRAnimation/lottie-react-native](https://github.com/CRAnimation/lottie-react-native)
+* 文中After Effects术语参考自官方中文版AE。
+* QQ群：547897182（iOS动效特工队，入群请提供个人主页货github账号）
 
 
 Lottie 是一个用于 Android 和 iOS 的代码库，可以解析用 [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) 制作动画后通过 [Bodymovin 插件](https://github.com/bodymovin/bodymovin) 导出的JSON数据文件并在移动端原生渲染!
@@ -289,3 +293,4 @@ Lottie 使用 [Facebook screenshot tests for Android](https://github.com/faceboo
 
 ## 有问题或者功能需求？
 任何问题欢迎到github的issues页面提出。 如果你的After Effect文件导出的动画无效, 也请将AE工程文件作为附件粘贴到你的issue里。没有原始文件的情况下我们也很难诊断问题。
+
